@@ -1,17 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASTDATA.io</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="hero">
-        <video autoplay loop muted plays-inline id="fastdata">
-            <source src="videos/fastdata.mp4" type="video/mp4">
-        </video>
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <section class="showcase">
+            <header>
+            <h2 class="logo"></h2>
+            <div class="toggle"></div>
+            </header>
+    <body>
+            <video src="videos/fastdata.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+            <h2>FASTDATA.io</h2>
+            <!--<a href="#"><img src="images/Fastdata_io_Logo.png"</a> -->
+            <h3>Data Processing at the Speed of Thought</h3>
+            <!-- <a href="#">Explore</a> -->
+            </div>
+            <ul class="social">
+            <li><a href="#"><img src="images/LI-In-Bug.png"></a></li>
+            <li><a href="#"><img src="images/logo-white.png"></a></li>
+            <li><a href="#"><img src="images/Instagram_Glyph_Gradient.png"></a></li>
+            </ul>
+        </section>
+    <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+<!--      <li><a href="#">News</a></li> -->
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
     </div>
-</body>
-</html>
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');
+            })
+        </script>
+    </body>
+  </html>
